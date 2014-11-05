@@ -38,15 +38,11 @@ public class Activity1 extends Activity{
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				but_act = v.getId();
-				String hola = Integer.toString(but_act);
-				Toast toast1 = Toast.makeText(getApplicationContext(), hola , Toast.LENGTH_SHORT);
-				toast1.show();
-				/*
+				
 				Intent intent = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.INTERNAL_CONTENT_URI);
 				int code = SELECT_PICTURE;
-				intent.putExtra("id", "hola");
 				startActivityForResult(intent, code);
-				*/
+				
 			}
 		};
 		//Asignacion de metodo onlick listener "cargarImagenes"
@@ -60,20 +56,15 @@ public class Activity1 extends Activity{
 		 if (data != null) {
 			   if (requestCode == SELECT_PICTURE) {  
 						Uri selectedImage = data.getData();
-						//String datos = data.getStringExtra("ID");
-						// Toast toast1 =Toast.makeText(getApplicationContext(),
-	                   // "Toast por defecto", Toast.LENGTH_SHORT);
-	                    //toast1.show();
-					//	Toast toast1 = Toast.makeText(getApplicationContext(), datos, Toast.LENGTH_SHORT);
-						//toast1.show();
+						
 						InputStream is;
 						try {
 						is = getContentResolver().openInputStream(selectedImage);
 				    	BufferedInputStream bis = new BufferedInputStream(is);
 				    	Bitmap bitmap = BitmapFactory.decodeStream(bis);  
-				
-				   		/*
-				   		switch (idBoton){
+				    	int codigoImagen = 0;
+				   		
+				   		switch (but_act){
 				   		case R.id.button1:
 				   			codigoImagen=R.id.imageView1;
 				   			break;
@@ -84,8 +75,8 @@ public class Activity1 extends Activity{
 				   			codigoImagen=R.id.imageView3;
 				   			break;
 				   		}
-				    	*/
-				    	ImageView ima = (ImageView) findViewById(R.id.imageView1);
+				    	
+				    	ImageView ima = (ImageView) findViewById(codigoImagen);
 				    	ima.setImageBitmap(bitmap);						
 					} catch (FileNotFoundException e) {}
 			   }
