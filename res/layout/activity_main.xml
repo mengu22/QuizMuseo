@@ -18,28 +18,28 @@
 		android:gravity="center"
 		android:layout_marginBottom="60dip"/>
 
-  <Button android:id="@+id/Button01"
+  <Button
+      android:id="@+id/Button01"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/play" />
 
-	    android:layout_height="wrap_content"
-	    android:layout_width="match_parent"
-	    android:text="Empezar"/>
+  <Button
+      android:id="@+id/Button02"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/opc" />
 
-  <Button android:id="@+id/Button02"
+  <Button
+      android:id="@+id/Button03"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/insert" />
 
-       android:layout_height="wrap_content"
-	   android:layout_width="match_parent"
-       android:text="Herramientas"/>
-
-  <Button android:id="@+id/Button03"
-
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent"
-       android:text="Insertar "/>
-
-  <Button android:id="@+id/Button04"
-
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent"
-       android:text="Salir"/>
+  <Button
+      android:id="@+id/Button04"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/salir" />
 
   </LinearLayout>

@@ -13,19 +13,19 @@
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/load" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/load" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/load" />
 
     </LinearLayout>
 
@@ -59,7 +59,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/tema"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -82,7 +82,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/tipo"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -102,7 +102,7 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/pregunta"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -122,7 +122,7 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/respa"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -142,7 +142,7 @@
             android:id="@+id/textView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/respb"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -162,7 +162,7 @@
             android:id="@+id/textView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/respc"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -182,7 +182,7 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium Text"
+            android:text="@string/respcorr"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -203,13 +203,13 @@
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/save" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/back" />
 
     </LinearLayout>
 

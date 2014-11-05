@@ -4,5 +4,19 @@
     <string name="app_name">QuizMuseo</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="salir">Salir</string>
+    <string name="load">Imagen</string>
+    <string name="tipo">Tipo</string>
+    <string name="tema">Tema</string>
+    <string name="pregunta">Pregunta</string>
+    <string name="respa">Respuesta A</string>
+    <string name="respb">Respuesta B</string>
+    <string name="respc">Respuesta C</string>
+    <string name="respcorr">Correcta</string>
+    <string name="save">Guardar</string>
+    <string name="back">Volver</string>
+    <string name="play">Jugar</string>
+    <string name="insert">Administrador</string>
+    <string name="opc">Opciones</string>
 
 </resources>
