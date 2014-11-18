@@ -30,13 +30,14 @@ public class DataBaseManager {
 			+CN_RESPB+ " text,"
 			+CN_RESPC+ " text,"
 			+CN_RESPCORR+ " text not null,"
-			+CN_IMA1+ " blob not null,"
+			+CN_IMA1+ " blob,"
 			+CN_IMA2+ " blob,"
 			+CN_IMA3+ " blob)";
 	
 	
 	private DataBaseHelper helper;
 	private SQLiteDatabase db;
+	
 	public DataBaseManager(Context context) {
 		
 		 DataBaseHelper helper = new DataBaseHelper(context);
@@ -53,9 +54,9 @@ public class DataBaseManager {
 		cv.put(CN_RESPB, pregunta.getRespb());
 		cv.put(CN_RESPC, pregunta.getRespc());
 		cv.put(CN_RESPCORR, pregunta.getRespcorr());
-		cv.put(CN_IMA1,Utility.getBytes(pregunta.getIma1()));
-		cv.put(CN_IMA2,Utility.getBytes(pregunta.getIma1()));
-		cv.put(CN_IMA3,Utility.getBytes(pregunta.getIma1()));
+		//cv.put(CN_IMA1,Utility.getBytes(pregunta.getIma1()));
+		//cv.put(CN_IMA2,Utility.getBytes(pregunta.getIma1()));
+		//cv.put(CN_IMA3,Utility.getBytes(pregunta.getIma1()));
 		db.insert(TABLE_NAME, null, cv);
 
 

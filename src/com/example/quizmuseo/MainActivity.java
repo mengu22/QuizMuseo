@@ -28,12 +28,17 @@ public class MainActivity extends ActionBarActivity {
         
         
         // Boton insertar en la base de datos
-        b3.setOnClickListener(new OnClickListener() {
+        	b3.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
+            	finish();
                Intent intent = new Intent(MainActivity.this, Activity1.class);
                startActivity(intent);
             }});
-      
+        // Boton para salir de la aplicacion
+        	b4.setOnClickListener(new OnClickListener() {
+                public void onClick(View v) {
+                  finish();
+                }});
         		
         
            }

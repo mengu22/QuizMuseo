@@ -29,7 +29,44 @@ public class Pregunta {
 		this.ima2 = ima2;
 		this.ima3 = ima3;
 	}
-
+	public Pregunta(int tipo, String tema, String pregunta, String respa,
+			String respb, String respc, String respcorr, Bitmap ima1){
+		this.tipo = tipo;
+		this.tema = tema;
+		this.pregunta = pregunta;
+		this.respa = respa;
+		this.respb = respb;
+		this.respc = respc;
+		this.respcorr = respcorr;
+		this.ima1 = ima1;
+		
+		
+	}
+	public Pregunta(int tipo, String tema, String pregunta,String respcorr, Bitmap ima1,
+			Bitmap ima2, Bitmap ima3) {
+		super();
+		this.tipo = tipo;
+		this.tema = tema;
+		this.pregunta = pregunta;
+		this.respcorr = respcorr;
+		this.ima1 = ima1;
+		this.ima2 = ima2;
+		this.ima3 = ima3;
+	}
+	
+	public Pregunta(int tipo, String tema, String pregunta, String respa,
+			String respb, String respc, String respcorr) {
+		super();
+		this.tipo = tipo;
+		this.tema = tema;
+		this.pregunta = pregunta;
+		this.respa = respa;
+		this.respb = respb;
+		this.respc = respc;
+		this.respcorr = respcorr;
+	
+	}
+	
 
 	public int getTipo() {
 		return tipo;
