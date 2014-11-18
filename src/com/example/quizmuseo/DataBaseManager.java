@@ -40,8 +40,8 @@ public class DataBaseManager {
 	
 	public DataBaseManager(Context context) {
 		
-		 DataBaseHelper helper = new DataBaseHelper(context);
-	        SQLiteDatabase db = helper.getWritableDatabase();
+		 helper = new DataBaseHelper(context);
+	     db = helper.getWritableDatabase();
 	
 	}
 	
